@@ -47,7 +47,9 @@ After do |scenario|
     Capybara.save_path = "features/reports"
     Capybara::Screenshot.class_eval do
       register_filename_prefix_formatter(:default) do
-        "#{scenario.name}"
+        feature_name = scenario.feature.to_s
+        test_name = feature_name.match(/^\w+\d+/)[0]
+        "#{test_name}_#{scenario.name}"
       end
     end
   end

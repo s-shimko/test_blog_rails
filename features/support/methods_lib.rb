@@ -24,7 +24,7 @@ module MethodsLib
     find("a[href='/articles/new']").click
     wait_until { has_css?("#new_article") }
 
-    $GLOBAL_HASH[hash_key] = rand(9999).to_s
+    $GLOBAL_HASH[hash_key] = rand(999..99999).to_s
     puts "Random prefix: #{$GLOBAL_HASH[hash_key]}"
 
     random_title = $GLOBAL_HASH[hash_key] + "_title"
@@ -46,6 +46,29 @@ module MethodsLib
 
     expect(page).to have_selector 'td', :text => "#{$GLOBAL_HASH[hash_key]}_title"
     expect(page).to have_selector 'td', :text => "#{$GLOBAL_HASH[hash_key]}_text"
+  end
+
+  def create_comment(hash_key)
+    $GLOBAL_HASH[hash_key] = rand(999..99999).to_s
+    puts "Random prefix: #{$GLOBAL_HASH[hash_key]}"
+
+    sleep 0.1
+    wait_until { has_css?("#comment_commenter") }
+    random_commenter = $GLOBAL_HASH[hash_key] + "_commenter"
+    find("#comment_commenter").set random_commenter
+    puts "Commenter: #{random_commenter}"
+
+    wait_until { has_css?("#comment_body") }
+    random_comment = $GLOBAL_HASH[hash_key] + "_comment"
+    find("#comment_body").set random_comment
+    puts "Body: #{random_comment}"
+
+    wait_until { has_css?("input[value='Create Comment']") }
+    find("input[value='Create Comment']").click
+    wait_until { has_css?("p>strong") }
+
+    expect(page).to have_selector 'p', :text => "#{$GLOBAL_HASH[hash_key]}_commenter"
+    expect(page).to have_selector 'p', :text => "#{$GLOBAL_HASH[hash_key]}_comment"
   end
 
 end
