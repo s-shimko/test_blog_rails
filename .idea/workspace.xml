@@ -2,60 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15f65252-ead3-47c4-b3d4-b08d4b923600" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/2.Article_CRUD_2017-04-16-17-02-34.046.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/2.Article_CRUD_2017-04-16-17-02-34.046.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-17-16-04.178.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-17-16-04.178.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-15-06.144.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-15-06.144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-19-04.806.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-19-04.806.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-19-52.424.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-19-52.424.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-27-40.352.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-27-40.352.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-29-55.583.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-29-55.583.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-33-49.718.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-33-49.718.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-34-29.634.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-34-29.634.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-39-14.877.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-39-14.877.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-40-51.160.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-40-51.160.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-41-18.303.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-41-18.303.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-41-44.809.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-41-44.809.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-43-10.396.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-43-10.396.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-47-14.649.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-47-14.649.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-48-08.501.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-48-08.501.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-50-48.570.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-50-48.570.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-52-31.229.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-52-31.229.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-52-49.570.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-52-49.570.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-56-21.392.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-56-21.392.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-57-17.849.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-57-17.849.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-58-56.684.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-18-58-56.684.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-19-03-54.630.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-19-03-54.630.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-19-16-43.019.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-19-16-43.019.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-19-22-39.557.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/3.Comments_CRUD_2017-04-16-19-22-39.557.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/test01_3.Comments_CRUD_2017-04-16-19-25-42.254.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/test01_3.Comments_CRUD_2017-04-16-19-25-42.254.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/test01_3.Comments_CRUD_2017-04-16-19-26-21.682.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/reports/test01_3.Comments_CRUD_2017-04-16-19-26-21.682.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/reports/folder_for_reports.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -107,8 +54,18 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            <state relative-caret-position="305">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="folder_for_reports.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/reports/folder_for_reports.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -179,6 +136,8 @@
         <option value="$PROJECT_DIR$/features/support/env.rb" />
         <option value="$PROJECT_DIR$/features/support/methods_lib.rb" />
         <option value="$PROJECT_DIR$/features/test01_positive_scenarios.feature" />
+        <option value="$PROJECT_DIR$/features/reports/test.txt" />
+        <option value="$PROJECT_DIR$/features/reports/folder_for_reports.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -667,7 +626,7 @@
       <workItem from="1492256682175" duration="13925000" />
       <workItem from="1492289420081" duration="388000" />
       <workItem from="1492289875189" duration="10786000" />
-      <workItem from="1492329323765" duration="27688000" />
+      <workItem from="1492329323765" duration="27910000" />
     </task>
     <servers />
   </component>
@@ -704,7 +663,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52787000" />
+    <option name="totallyTimeSpent" value="53009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="27" width="1280" height="997" extended-state="6" />
@@ -743,13 +702,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.text.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1100,10 +1052,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/features/reports/folder_for_reports.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="305">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
