@@ -1,7 +1,7 @@
-@all @test_01
-Feature: test01 - Positive scenarios
+@all @test1
+Feature: test1 - Positive scenarios
 
-  @test_01_s1
+  @t1_s1
   Scenario: 1.Article_smoke_test
 # Smoke test
     Given visit main page with login "admin" and pass "admin"
@@ -15,7 +15,7 @@ Feature: test01 - Positive scenarios
 
 
 
-  @test_01_s2
+  @t1_s2
   Scenario: 2.Article_CRUD
 # Start New Article creation
     Given visit address "localhost:3000/articles/" with login "admin" and pass "admin"
@@ -43,7 +43,7 @@ Feature: test01 - Positive scenarios
 
 
 
-  @test_01_s3
+  @t1_s3
   Scenario: 3.Comments_CRUD
     When create article and put random prefix in GLOBAL_HASH "t01_s3_prefix"
 

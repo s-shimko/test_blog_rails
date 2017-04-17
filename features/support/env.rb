@@ -4,7 +4,7 @@ require 'capybara/cucumber'
 require 'capybara-webkit'
 
 require 'selenium-webdriver'
-require 'rspec'
+require 'rspec-rails'
 require 'rspec/expectations'
 
 require 'capybara-screenshot'

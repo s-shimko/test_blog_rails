@@ -9,7 +9,7 @@ group :test do
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner', '~> 1.5.3'
-  gem 'rspec', '~> 3.5.0'
+  gem 'rspec-rails', '~> 3.5'
   gem 'capybara-webkit', '~> 1.14.0'
   gem 'selenium-webdriver'
   gem 'capybara-screenshot', '~> 1.0.14'

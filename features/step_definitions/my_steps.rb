@@ -48,15 +48,29 @@ When(/^fill 'Title' form with prefix from GLOBAL_HASH "(.*)"$/) do |hash_key|
   puts "Title: #{random_title}"
 end
 
+When(/^fill 'Title' form with "(.*)"$/) do |value|
+  fill_in('Title', :with => value)
+  puts "Title: #{value}"
+end
+
 When(/^fill 'Text' form with prefix from GLOBAL_HASH "(.*)"$/) do |hash_key|
   random_text = $GLOBAL_HASH[hash_key] + "_text"
   fill_in('Text', :with => random_text)
   puts "Text: #{random_text}"
 end
 
+When(/^fill 'Text' form with "(.*)"$/) do |value|
+  fill_in('Text', :with => value)
+  puts "Text: #{value}"
+end
+
 When(/^click 'Create Article' button$/) do
   find("input[type='submit']").click
   wait_until { has_css?("p>strong") }
+end
+
+When(/^click 'Create Article' button without wait$/) do
+  find("input[type='submit']").click
 end
 
 Then(/^verify that article created with prefix from GLOBAL_HASH "(.*)"$/) do |hash_key|
@@ -100,6 +114,10 @@ When(/^click 'Update Article' button$/) do
   wait_until { has_css?("p>strong") }
 end
 
+When(/^click 'Update Article' button without wait$/) do
+  find("input[value='Update Article']").click
+end
+
 When(/^click 'Destroy' link related to title from GLOBAL_HASH "([^"]*)"$/) do |hash_key|
   find(:xpath, "//td[contains(., #{$GLOBAL_HASH[hash_key]})]/..//a[.='Destroy']").click
   wait_until { has_css?("a[href='/articles/new']") }
@@ -112,10 +130,12 @@ When(/^click 'Show' link related to title from GLOBAL_HASH "([^"]*)"$/) do |hash
 end
 
 When(/^fill 'Commenter' form with prefix from GLOBAL_HASH "([^"]*)"$/) do |hash_key|
-  sleep 0.1
   wait_until { has_css?("#comment_commenter") }
   random_commenter = $GLOBAL_HASH[hash_key] + "_commenter"
+  sleep 0.1
   find("#comment_commenter").set random_commenter
+
+  expect(find("#comment_commenter").value).to eq random_commenter
   puts "Commenter: #{random_commenter}"
 end
 
@@ -123,6 +143,8 @@ When(/^fill 'Body' form with prefix from GLOBAL_HASH "([^"]*)"$/) do |hash_key|
   wait_until { has_css?("#comment_body") }
   random_comment = $GLOBAL_HASH[hash_key] + "_comment"
   find("#comment_body").set random_comment
+
+  expect(find("#comment_body").value).to eq random_comment
   puts "Body: #{random_comment}"
 end
 
@@ -156,4 +178,9 @@ end
 
 When(/^create comment and put random prefix in GLOBAL_HASH "([^"]*)"$/) do |hash_key|
   create_comment(hash_key)
+end
+
+
+And(/^error message is "([^"]*)"$/) do |text|
+  expect(page).to have_selector 'li', :text => text
 end
