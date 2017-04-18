@@ -16,13 +16,16 @@ Feature: test2 - Negative scenarios
     And error message is "<error_message>"
 
     Examples:
-      | title | text  | err_num  | error_message                                |
-      |       |       | 2 errors | Title can't be blank                         |
-      |       |       | 2 errors | Title is too short (minimum is 5 characters) |
-      |       | abcde | 2 errors | Title can't be blank                         |
-      |       | abcde | 2 errors | Title is too short (minimum is 5 characters) |
-      | abcd  | abcd  | 1 error  | Title is too short (minimum is 5 characters) |
-      | a     | abcde | 1 error  | Title is too short (minimum is 5 characters) |
+      | title | text       | err_num  | error_message                                |
+      |       |            | 2 errors | Title can't be blank                         |
+      |       |            | 2 errors | Title is too short (minimum is 5 characters) |
+      |       | abcde      | 2 errors | Title can't be blank                         |
+      |       | abcde      | 2 errors | Title is too short (minimum is 5 characters) |
+      | abcd  | abcd       | 1 error  | Title is too short (minimum is 5 characters) |
+      | a     | abcde      | 1 error  | Title is too short (minimum is 5 characters) |
+      | ab12  | abcd12345  | 1 error  | Title is too short (minimum is 5 characters) |
+      | _@_#  | abcd12345  | 1 error  | Title is too short (minimum is 5 characters) |
+      | "  "  | abcd1245   | 1 error  | Title is too short (minimum is 5 characters) |
 
 
   @t2_s2
@@ -34,10 +37,13 @@ Feature: test2 - Negative scenarios
     And error message is "<error_message>"
 
     Examples:
-      | title | text  | err_num  | error_message                                |
-      |       |       | 2 errors | Title can't be blank                         |
-      |       |       | 2 errors | Title is too short (minimum is 5 characters) |
-      |       | abcde | 2 errors | Title can't be blank                         |
-      |       | abcde | 2 errors | Title is too short (minimum is 5 characters) |
-      | abcd  | abcd  | 1 error  | Title is too short (minimum is 5 characters) |
-      | a     | abcde | 1 error  | Title is too short (minimum is 5 characters) |
+      | title | text       | err_num  | error_message                                |
+      |       |            | 2 errors | Title can't be blank                         |
+      |       |            | 2 errors | Title is too short (minimum is 5 characters) |
+      |       | abcde      | 2 errors | Title can't be blank                         |
+      |       | abcde      | 2 errors | Title is too short (minimum is 5 characters) |
+      | abcd  | abcd       | 1 error  | Title is too short (minimum is 5 characters) |
+      | a     | abcde      | 1 error  | Title is too short (minimum is 5 characters) |
+      | ab12  | abcd12345  | 1 error  | Title is too short (minimum is 5 characters) |
+      | _@_#  | abcd12345  | 1 error  | Title is too short (minimum is 5 characters) |
+      | "  "  | abcd1245   | 1 error  | Title is too short (minimum is 5 characters) |

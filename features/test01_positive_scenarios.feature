@@ -42,7 +42,6 @@ Feature: test1 - Positive scenarios
     Then verify article absence with prefix from GLOBAL_HASH "t01_s2_prefix_updated"
 
 
-
   @t1_s3
   Scenario: 3.Comments_CRUD
     When create article and put random prefix in GLOBAL_HASH "t01_s3_prefix"
@@ -68,5 +67,45 @@ Feature: test1 - Positive scenarios
 
 # Verify that article with comments is on the list
     Then verify that article created with prefix from GLOBAL_HASH "t01_s3_prefix"
+
+
+
+  @t1_s4
+  Scenario Outline: 4.Cases_Article_and_Comment_creation_update
+# Start New Article creation
+    Given visit address "localhost:3000/articles/" with login "admin" and pass "admin"
+    When click 'New article' link
+    When fill 'Title' form with "<title>"
+    When fill 'Text' form with "<text>"
+    When click 'Create Article' button without wait
+    Then verify that article created with 'Title' "<title>" and 'Text' "<text>"
+
+# Update created article
+    When click 'Edit' link on article form
+    When fill 'Title' form with "<upd_title>"
+    When fill 'Text' form with "<upd_text>"
+    When click 'Update Article' button
+    Then verify that article created with 'Title' "<upd_title>" and 'Text' "<upd_text>"
+
+# Create a comment
+    When fill 'Commenter' form with "<commenter>"
+    When fill 'Body' form with "<comment>"
+    When click 'Create Comment' button
+    Then verify that comment created with 'Commenter' "<commenter>" and 'Comment' "<comment>"
+
+    When click 'Back' link
+    Then verify article absence with 'Title' "<title>" and 'Text' "<text>" in list
+    Then verify article presence with 'Title' "<upd_title>" and 'Text' "<upd_text>" in list
+
+    Examples:
+      | title     | text       | upd_title   | upd_text       | commenter   | comment |
+      | 12345     | 465832     | 987654      |                |             |         |
+      | 999999    | 1234sdf5   | 54321       |                |  zxcvb      | 1zxcvzx |
+      | ojfoe     | 12sdf345   | 2dferdfrors | dfddfaaass     |  tyuiuyi    | 123456  |
+      | !@#$%     | !@#$!#$    | !@#!@#      | !$#@!#@!#      |  !@#@!#     | !@#!@#  |
+      | 00000     | 00000      | 111111      |  111111        |  0          | 0       |
+      | POIIUTY   | FGHJKJ     | QOWIEU      |  BCNXMC        |  CMIKSSLS   | OWEIWC  |
+
+
 
 

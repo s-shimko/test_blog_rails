@@ -22,6 +22,7 @@ When(/^click 'My Blog' link$/) do
 end
 
 When(/^click 'New article' link$/) do
+  wait_until { has_css?("a[href='/articles/new']") }
   find("a[href='/articles/new']").click
   wait_until { has_css?("#new_article") }
 end
@@ -183,4 +184,45 @@ end
 
 And(/^error message is "([^"]*)"$/) do |text|
   expect(page).to have_selector 'li', :text => text
+end
+
+Then(/^verify that article created with 'Title' "([^"]*)" and 'Text' "([^"]*)"$/) do |title, text|
+  expect(page).to have_selector 'p', :text => title
+  expect(page).to have_selector 'p', :text => text
+end
+
+When(/^click 'Edit' link on article form$/) do
+  find(:xpath, ".//a[.='Edit']").click
+  wait_until { has_css?(".edit_article") }
+end
+
+When(/^fill 'Commenter' form with "([^"]*)"$/) do |commenter|
+  wait_until { has_css?("#comment_commenter") }
+  sleep 0.1
+  find("#comment_commenter").set commenter
+
+  expect(find("#comment_commenter").value).to eq commenter
+end
+
+When(/^fill 'Body' form with "([^"]*)"$/) do |comment|
+  wait_until { has_css?("#comment_body") }
+  find("#comment_body").set comment
+
+  expect(find("#comment_body").value).to eq comment
+  puts "Body: #{comment}"
+end
+
+Then(/^verify that comment created with 'Commenter' "([^"]*)" and 'Comment' "([^"]*)"$/) do |commenter, comment|
+  expect(page).to have_selector 'p', :text => commenter
+  expect(page).to have_selector 'p', :text => comment
+end
+
+Then(/^verify article absence with 'Title' "(.*)" and 'Text' "(.*)" in list$/) do  |title, text|
+  expect(page).to_not have_selector 'td', :text => title
+  expect(page).to_not have_selector 'td', :text => text
+end
+
+Then(/^verify article presence with 'Title' "(.*)" and 'Text' "(.*)" in list$/) do  |title, text|
+  expect(page).to have_selector 'td', :text => title
+  expect(page).to have_selector 'td', :text => text
 end
